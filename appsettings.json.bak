@@ -1,0 +1,40 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Error"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=MDS-HYD-L10\\SA;Database=EndAgent;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True"
+  },
+  "Services": {
+    //time (m-minutes, h-hours, s-seconds) & period-units
+    "time": "m",
+    "period": "1"
+  },
+  "ApiEndPoints": {
+    // ITAM API URL
+    "baseurl": "https://localhost:6002",
+    "assetapprovalsurl": "/api/itam/ea/checkassetapprovals",
+    "objectidurl": "/api/itam/ea/getobjectid",
+    "eadevicesurl": "/api/itam/ea/checkeadevices",
+    "devicetypeurl": "/api/itam/ea/getdevtype",
+    "addeadeviceurl": "/api/itam/ea/addeadevice",
+    "addeaapprovalurl": "/api/itam/ea/addassetapproval",
+    "itamApiKeyHeader": "x-api-key",
+    "itamApiKey": "E715A9ADACFC455A872139C49E3F19C8",
+    // Identity Provider
+    "ITAMUrl": "https://localhost:5001"
+  },
+  "Paths": {
+    "EndAgentInstall": "C:\\Program Files (x86)\\EPT\\Patch"
+  },
+
+  
+
+  "Authentication": {
+    "ApiKey": "042E709DBBDD4FE19406298B65EEBF80"
+  }
+}
